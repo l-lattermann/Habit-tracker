@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d67af1d5-a264-4a62-9b5e-a2364bfd94a3" name="Changes" comment="19.01.24 alles eig ganz gut. IO und main fehlt">
-      <changelist_data name="l-lattermann" email="laurenz.lattermann@gmail.com" />
+    <list default="true" id="d67af1d5-a264-4a62-9b5e-a2364bfd94a3" name="Changes" comment="Expanded project_test.py, 70% done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL_functionalities.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_functionalities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/project_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="l-lattermann &lt;laurenz.lattermann@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -152,11 +159,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707291797015</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Expanded project_test.py, 70% done">
+      <option name="closed" value="true" />
+      <created>1707303127734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707303127734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="19.01.24 alles eig ganz gut. IO und main fehlt" />
-    <option name="LAST_COMMIT_MESSAGE" value="19.01.24 alles eig ganz gut. IO und main fehlt" />
+    <MESSAGE value="Expanded project_test.py, 70% done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expanded project_test.py, 70% done" />
   </component>
 </project>

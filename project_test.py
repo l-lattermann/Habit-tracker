@@ -1,19 +1,22 @@
-import pathlib
+import coverage
 
 import numpy as np
 import pandas as pd
+import pathlib
 
 import SQL_functionalities
 import class_habit as h
 import pytest
 import analytics
 
+cov = coverage.Coverage()
+cov.start()
+
+
 
 class TestHabit:
     def setup_method(self):
         self.drinking = h.Habit("drinking")
-        self.smoking = h.Habit("smoking")
-        self.smoking.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="days", periodicity=1)
 
     def test_empty_habit(self):
         # Test if all values are zero after habit creation
@@ -39,9 +42,11 @@ class TestHabit:
         assert self.drinking.timer.periodicity == 1
         assert self.drinking.timer.timespan == "days"
 
+        # Test if habit is in habit list
+        assert h.Habit.list["drinking"] == self.drinking
+
     def teardown_method(self):
-        del self.drinking
-        del self.smoking
+        self.drinking.delete_habit()
 
 
 class TestHabitCounter:
@@ -52,8 +57,9 @@ class TestHabitCounter:
         self.last_day = self.now - pd.offsets.DateOffset(days=1)  # Calculate last day from current date
         self.last_week = self.now - pd.offsets.DateOffset(weeks=1)  # Calculate last week from current date
         self.last_month = self.now - pd.offsets.DateOffset(months=1)  # Calculate last month from current date
+        self.future = self.now + pd.offsets.DateOffset(months=1)
 
-    def test_counter_and_streak(self):
+    def test_check_habit(self):
         # Test if counter and streak increment correctly when habit is checked
         # days
         self.habit.timer.initialize(start_date=self.last_day, timespan="days", periodicity=1,
@@ -114,7 +120,28 @@ class TestHabitCounter:
         assert self.habit.counter == 0
         assert self.habit.streak == 10
 
+        # Check if check habit detects that next check is in the future correctly
+        self.habit.timer.initialize(start_date=self.future, timespan="months", periodicity=1,
+                                    last_checked=None)
+        # Values make no sense but ensure that streak and counter are not manipulated when habit is in the future
+        self.habit.counter = 10
+        self.habit.streak = 10
+        self.habit.check_habit()  # Streak and counter = 10 -> future habit -> streak = 10 and counter = 10
+        assert self.habit.counter == 10
+        assert self.habit.streak == 10
+
+        # Check if check habit work with start date only when habit is broken
+        self.habit.timer.initialize(start_date=self.last_month, timespan="days", periodicity=1,
+                                    last_checked=None)
+        # Values make no sense but ensure that streak and counter are not manipulated when habit is in the future
+        self.habit.counter = 10
+        self.habit.streak = 10
+        self.habit.check_habit()  # Streak and counter = 10 -> break habit -> streak = 10 and counter = 0
+        assert self.habit.counter == 0
+        assert self.habit.streak == 10
+
     def teardown_method(self):
+        self.habit.delete_habit()
         del self.habit
         del self
 
@@ -216,6 +243,7 @@ class TestTimeFuncModule:
         assert self.habit.timer.is_in_time() == 2
 
     def teardown_method(self):
+        self.habit.delete_habit()
         del self.habit
         del self
 
@@ -223,34 +251,54 @@ class TestTimeFuncModule:
 class TestAnalytics:
 
     def setup_method(self):
-
         # Create habits, so every calculation of the functions below is executed
         self.drinking = h.Habit("drinking")
         self.smoking = h.Habit("smoking")
         self.learning = h.Habit("learning")
         self.smoking.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="days", periodicity=1)
         self.drinking.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="days", periodicity=1)
-        self.drinking.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="weeks", periodicity=1)
+        self.learning.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="weeks", periodicity=1)
 
     def test_same_periodicity(self):
-        analytics.same_periodicity()
-        pass
+        # Create a dataframe to compare to
+        compare_frame = pd.DataFrame(data=[["smoking", "learning"], ["drinking", np.NaN]],
+                                     columns=[('days', 1), ('weeks', 1)])
+        # Compare both frames
+        pd.testing.assert_frame_equal(analytics.same_periodicity(), compare_frame)
 
     def test_list_all_habits(self):
-        analytics.list_all_habits()
-        pass
+        # Check if habits were listed correctly
+        assert analytics.list_all_habits() == ["drinking", "smoking", "learning"]
 
     def test_all_values_table(self):
-        analytics.all_values_table()
-        pass
+        # Create dataframe to compare to
+        compare_frame = pd.DataFrame(data=[[np.datetime64("2023-11-06"), None, "every 1 days", 0, 0, 0, 0, 0],
+                                           [np.datetime64("2023-11-06"), None, "every 1 days", 0, 0, 0, 0, 0],
+                                           [np.datetime64("2023-11-06"), None, "every 1 weeks", 0, 0, 0, 0, 0]],
+                                     index=["drinking", "smoking", "learning"],
+                                     columns=["Start date", "Last checked", "Periodicity", "Times checked",
+                                              "Times failed", "Checked in %", "Longest streak", "Current counter"]
+                                     )
+        # Compare both frames
+        pd.testing.assert_frame_equal(analytics.all_values_table(), compare_frame, check_dtype=False)
 
     def test_can_check_today(self):
-        analytics.can_check_today()
-        pass
+        # Check if all habits are listed that are in time or in the past
+        assert analytics.can_check_today() == ['drinking', 'smoking', 'learning']
 
     def test_sort_by_streak(self):
-        analytics.sort_by_streak()
-        pass
+        # Set streak values
+        self.drinking.streak = 1
+        self.smoking.streak = 2
+        self.learning.streak = 3
+
+        # Create a frame to compare to
+        compare_frame = pd.DataFrame(data=[1, 2, 3],
+                                     index=["drinking", "smoking", "learning"],
+                                     columns=["Longest streak"])
+
+        # Compare both frames
+        pd.testing.assert_frame_equal(analytics.sort_by_streak(), compare_frame, check_dtype=False)
 
     def test_sort_by_checked_ratio_positive(self):
         analytics.sort_by_checked_ratio_negative()
@@ -260,12 +308,10 @@ class TestAnalytics:
         analytics.sort_by_checked_ratio_positive()
         pass
 
-
     def teardown_method(self):
-        del self.drinking
-        del self.smoking
-        del self.learning
-        del self
+        self.drinking.delete_habit()
+        self.smoking.delete_habit()
+        self.learning.delete_habit()
 
 
 class TestSQLFunctionalities:
@@ -277,29 +323,55 @@ class TestSQLFunctionalities:
         self.learning = h.Habit("learning")
         self.smoking.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="days", periodicity=1)
         self.drinking.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="days", periodicity=1)
-        self.drinking.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="weeks", periodicity=1)
+        self.learning.timer.initialize(start_date=np.datetime64("2023-11-06"), timespan="weeks", periodicity=1)
 
         # Create a database object
         self.database = SQL_functionalities.Database("pytest.db")
 
-    def test_restore_all(self):
-        self.database.restore_all()
-        pass
-
-    def test_save_all(self):
+    def test_save_all_and_restore_all(self, monkeypatch):
+        # Monkeypatch the "input" function, so that it returns "."
+        monkeypatch.setattr('builtins.input', lambda: ".")
         self.database.save_all()
-        pass
+
+        # Monkeypatch the "input" function, so that it returns "."
+        monkeypatch.setattr('builtins.input', lambda: ".")
+        self.database.restore_all()
+
+    def test_save_time_data(self, monkeypatch):
+
+        # Monkeypatch the "input" function, so that it returns "."
+        monkeypatch.setattr('builtins.input', lambda: ".")
+
+        # Check habit to generate time data
+        self.drinking.check_habit()
+        self.smoking.check_habit()
+        self.learning.check_habit()
+        self.database.save_all()
+
+    def test_exeptions(self, monkeypatch):
+
+        # Monkeypatch try statement to access except statements
+        monkeypatch.setattr("builtins.try", lambda: False)
+        self.database.save_all()
+        self.database.restore_all()
+
 
     def test_close_connection(self):
         self.database.close_connection()
-        pass
+
+   # def test_
 
     def teardown_method(self):
         del self.drinking
         del self.smoking
         del self.learning
+        self.database.con.close()
         path = pathlib.Path("pytest.db")
         path.unlink()
 
 
 pytest.main()
+
+cov.stop()
+cov.save()
+cov.html_report(directory='coverage_reports')

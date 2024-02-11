@@ -151,13 +151,18 @@ class Database:
             h.Habit.list[x] = h.Habit(x)
 
             # Get the time data back
-            time_data_index = [time_data_index[0] for time_data_index in
-                               self.cur.execute("""SELECT dates FROM {}_time_data""".format(x))]
+            try:
+                time_data_index = [time_data_index[0] for time_data_index in
+                                   self.cur.execute("""SELECT dates FROM {}_time_data""".format(x))]
 
-            time_data_value = [time_data_value[0] for time_data_value in
-                               self.cur.execute("""SELECT value FROM {}_time_data""".format(x))]
+                time_data_value = [time_data_value[0] for time_data_value in
+                                   self.cur.execute("""SELECT value FROM {}_time_data""".format(x))]
 
-            h.Habit.list[x].time_data = pd.Series(time_data_value, index=time_data_index)
+                h.Habit.list[x].time_data = pd.Series(time_data_value, index=time_data_index)
+
+            # If time_data doesn't exist
+            except sqlite3.OperationalError:
+                traceback.print_exc()
 
             # Get all other values back
             try:
