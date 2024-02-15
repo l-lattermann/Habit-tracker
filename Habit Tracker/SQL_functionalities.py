@@ -99,9 +99,9 @@ class Database:
             self.cur.execute((create_time_data_table.format(x)))
 
             # Get the time_data index and value by position
-            for y in range(len(h.Habit.list[x].time_data)):
-                values = h.Habit.list[x].time_data.iloc[y]
-                dates = pd.Timestamp.isoformat(pd.Timestamp(h.Habit.list[x].time_data.index[y]))
+            for y in range(len(h.Habit.list[x].timer.time_data)):
+                values = h.Habit.list[x].timer.time_data.iloc[y]
+                dates = pd.Timestamp.isoformat(pd.Timestamp(h.Habit.list[x].timer.time_data.index[y]))
 
                 # Insert time_data into database
                 try:
@@ -158,7 +158,7 @@ class Database:
                 time_data_value = [time_data_value[0] for time_data_value in
                                    self.cur.execute("""SELECT value FROM {}_time_data""".format(x))]
 
-                h.Habit.list[x].time_data = pd.Series(time_data_value, index=time_data_index)
+                h.Habit.list[x].timer.time_data = pd.Series(time_data_value, index=time_data_index)
 
             # If time_data doesn't exist
             except sqlite3.OperationalError:

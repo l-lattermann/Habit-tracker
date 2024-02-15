@@ -392,7 +392,7 @@ def show_time_data():
                 for x in can_show:
                     if habit == x:
                         print("Time data for {}:".format(x))    # Insert habit names into string
-                        print(h.Habit.list[x].time_data.to_string())    # Print complete time series
+                        print(h.Habit.list[x].timer.time_data.to_string())    # Print complete time series
                         print("Press any key to go back.")
                         input()
 

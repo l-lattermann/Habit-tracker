@@ -1,6 +1,5 @@
 import numpy as np
-import pandas as pd
-import class_TimeFunc as ts
+import class_TimeFunc as Ts
 
 
 # Create class Habit
@@ -13,8 +12,7 @@ class Habit:
         self.name = name \n
         self.timer = TimeFunc() \n
         self.counter = 0 \n
-        self.streak = 0 \n
-        self.time_data = pd.Series() \n\n
+        self.streak = 0 \n\n
         check_habit(self) \n
         delete_habit(self)\n
 
@@ -22,10 +20,9 @@ class Habit:
         """
 
         self.name = name
-        self.timer = ts.TimeFunc()      # Class TimeFunc host all the time related functionalities
+        self.timer = Ts.TimeFunc()      # Class TimeFunc host all the time related functionalities
         self.counter = 0
         self.streak = 0
-        self.time_data = pd.Series()
         Habit.list[self.name] = self    # Put habit into habit list to access it easily
 
     def check_habit(self) -> int:
@@ -41,7 +38,7 @@ class Habit:
         if is_in_time == 1:
             self.counter += 1       # increase counter by one
             self.timer.last_checked = np.datetime64("now", "D")     # set last_check today
-            self.time_data[np.datetime64("now")] = "checked"        # Insert the check event into time_data
+            self.timer.time_data[np.datetime64("now")] = "checked"        # Insert the check event into time_data
 
             if self.counter > self.streak:      # if counter is bigger than streak, increase counter
                 self.streak = self.counter
@@ -58,7 +55,7 @@ class Habit:
 
             # Insert failed into time_data series for all dates that should have been checked
             while x < np.datetime64("now"):
-                self.time_data[x] = "failed"
+                self.timer.time_data[x] = "failed"
                 x += self.timer.offset      # Iterate through all dates that should have been checked
             self.timer.last_checked = np.datetime64("now", "D")     # set last_checked today
             return 0    # habit was broken

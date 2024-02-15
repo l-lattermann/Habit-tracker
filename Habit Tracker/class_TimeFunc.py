@@ -21,6 +21,7 @@ class TimeFunc:
         self.last_checked = None
         self.periodicity = None
         self.offset = None
+        self.time_data = pd.Series()
 
     def initialize(self, start_date: time, timespan: str, periodicity: int, last_checked=None):
         """
@@ -160,7 +161,7 @@ class TimeFunc:
                     return 0
             else:
                 # Get necessary values from timer
-                next_check_month = pd.Timestamp(self.last_checked + self.offset).month  # Get month number for next chec
+                next_check_month = pd.Timestamp(self.last_checked + self.offset).month  # Get month number for next check
                 next_check_year = pd.Timestamp(self.last_checked + self.offset).year    # Get year number for next check
                 current_month = pd.Timestamp(time("now", "D")).month                    # Get current month number
                 current_year = pd.Timestamp(time("now", "D")).year                      # Get current year number

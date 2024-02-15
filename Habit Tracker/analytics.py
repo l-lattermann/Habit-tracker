@@ -63,14 +63,14 @@ def all_values_table():
                                               str(h.Habit.list[x].timer.timespan))  # Insert periodicity
         try:
             # Count "checked" in time_data and insert
-            all_values_frame["Times checked"][x] = h.Habit.list[x].time_data.value_counts()["checked"]
+            all_values_frame["Times checked"][x] = h.Habit.list[x].timer.time_data.value_counts()["checked"]
         except KeyError:
             # If time_data empty
             all_values_frame["Times checked"][x] = 0
 
         try:
             # Count "failed" in time_data and insert
-            all_values_frame["Times failed"][x] = h.Habit.list[x].time_data.value_counts()["failed"]
+            all_values_frame["Times failed"][x] = h.Habit.list[x].timer.time_data.value_counts()["failed"]
         except KeyError:
             # If time_data is empty
             all_values_frame["Times failed"][x] = 0
@@ -78,12 +78,12 @@ def all_values_table():
         # Calculate and insert checked/(checked+failed)
         try:
             # Will throw error if failed count is zero
-            failed_count = h.Habit.list[x].time_data.value_counts()["failed"]
+            failed_count = h.Habit.list[x].timer.time_data.value_counts()["failed"]
         except KeyError:
             failed_count = 0    # If zero, set zero
         try:
             # Will throw error if checked count is zero
-            checked_count = h.Habit.list[x].time_data.value_counts()["checked"]
+            checked_count = h.Habit.list[x].timer.time_data.value_counts()["checked"]
         except KeyError:
             checked_count = 0   # If zero, set zero
 

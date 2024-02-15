@@ -23,7 +23,7 @@ class TestHabit:
         assert self.drinking.name == "drinking"
         assert self.drinking.counter == 0
         assert self.drinking.streak == 0
-        assert self.drinking.time_data.empty
+        assert self.drinking.timer.time_data.empty
         assert self.drinking.timer.last_checked is None
         assert self.drinking.timer.offset is None
         assert self.drinking.timer.start_date is None
@@ -35,7 +35,7 @@ class TestHabit:
         assert self.drinking.name == "drinking"
         assert self.drinking.counter == 0
         assert self.drinking.streak == 0
-        assert self.drinking.time_data.empty
+        assert self.drinking.timer.time_data.empty
         assert self.drinking.timer.last_checked is None
         assert self.drinking.timer.offset == pd.offsets.DateOffset(days=1)
         assert self.drinking.timer.start_date == np.datetime64("2023-11-06")
@@ -348,18 +348,8 @@ class TestSQLFunctionalities:
         self.learning.check_habit()
         self.database.save_all()
 
-    def test_exeptions(self, monkeypatch):
-
-        # Monkeypatch try statement to access except statements
-        monkeypatch.setattr("builtins.try", lambda: False)
-        self.database.save_all()
-        self.database.restore_all()
-
-
     def test_close_connection(self):
         self.database.close_connection()
-
-   # def test_
 
     def teardown_method(self):
         del self.drinking
