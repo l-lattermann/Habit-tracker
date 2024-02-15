@@ -87,6 +87,6 @@ sleeping.timer.last_checked = np.datetime64("2023-12-03")
 
 print(analytics.all_values_table().to_string())
 
-db = SQL_functionalities.Database("test_data")
+db = SQL_functionalities.Database("test_data.db")
 db.save_all()
 db.close_connection()

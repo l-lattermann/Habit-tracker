@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import class_timespan as ts
+import class_TimeFunc as ts
 
 
 # Create class Habit

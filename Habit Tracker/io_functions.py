@@ -38,11 +38,11 @@ def start_up() -> bool:
         ]).ask()
 
     if start == "Normal - load save data and begin":
-        restore_all_from_database("Habits.db")      # Load save data for mode normal
+        restore_all_from_database("data/habits.db")      # Load save data for mode normal
         return False
 
     elif start == "Test mode - load test data and explore the app":
-        restore_all_from_database("test_data")      # Load test data for mode test
+        restore_all_from_database("data/test_data.db")      # Load test data for mode test
         return True
 
 

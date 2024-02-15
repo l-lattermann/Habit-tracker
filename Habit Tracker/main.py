@@ -7,9 +7,9 @@ test_mode = io.start_up()
 
 # Change the save file in test mode to test.db so test data does not overwrite the current save data
 if test_mode:
-    save_file = "test.db"
+    save_file = "data/test_save.db"
 else:
-    save_file = "Habits.db"
+    save_file = "data/habits.db"
 
 
 # Application header
