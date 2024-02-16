@@ -1,5 +1,5 @@
 import numpy as np
-import class_TimeFunc as Ts
+from habit_tracker import class_TimeFunc as Ts
 
 
 # Create class Habit

@@ -2,7 +2,7 @@ import sqlite3
 import traceback
 import pandas as pd
 import numpy as np
-import class_habit as h
+from habit_tracker import class_habit as h
 
 
 # Create the database class

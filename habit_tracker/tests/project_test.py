@@ -1,13 +1,13 @@
+import pytest
 import coverage
-
 import numpy as np
 import pandas as pd
 import pathlib
 
-import SQL_functionalities
-import class_habit as h
-import pytest
-import analytics
+from habit_tracker import (SQL_functionalities,
+                           class_habit as h,
+                           analytics)
+
 
 cov = coverage.Coverage()
 cov.start()

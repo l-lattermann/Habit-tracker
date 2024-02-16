@@ -1,7 +1,7 @@
-import class_habit as h
 import numpy as np
 import pandas as pd
 
+from habit_tracker import class_habit as h
 
 def same_periodicity():
     """

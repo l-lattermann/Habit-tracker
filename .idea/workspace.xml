@@ -5,22 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d67af1d5-a264-4a62-9b5e-a2364bfd94a3" name="Changes" comment="Expanded project_test.py, 86% coverage now. Couldn't get testing exeptions to work.">
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/tests/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/.idea/Simple habit tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/.idea/Habit tracker.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/SQL_functionalities.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/SQL_functionalities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/analytics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/analytics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/class_habit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/class_habit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/class_timespan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/class_timespan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/habits.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/data/habits.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/io_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/io_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/project_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/tests/project_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/test.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/test_data" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/data/test_data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Habit tracker/testdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Habit tracker/Habit Tracker/tests/testdata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/habit_tracker/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Habit tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Habit tracker.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/SQL_functionalities.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/SQL_functionalities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/analytics.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/analytics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/class_TimeFunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/class_TimeFunc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/class_habit.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/class_habit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/data/habits.db" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/data/habits.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/data/test_data.db" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/data/test_data.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/io_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/io_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/project_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/tests/project_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Habit Tracker/testdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/tests/testdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
         <option value="l-lattermann &lt;laurenz.lattermann@gmail.com&gt;" />
       </list>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Habit tracker" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -56,71 +57,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests in project_test.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in scratch.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_project.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SQL primitive testing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.SQL_functionalities.executor&quot;: &quot;Run&quot;,
-    &quot;Python.adfadsf.executor&quot;: &quot;Run&quot;,
-    &quot;Python.adfdaf.executor&quot;: &quot;Run&quot;,
-    &quot;Python.analytics.executor&quot;: &quot;Run&quot;,
-    &quot;Python.class_habit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.class_timespan.executor&quot;: &quot;Run&quot;,
-    &quot;Python.io_functions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.project_test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scratch_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test project.executor&quot;: &quot;Run&quot;,
-    &quot;Python.testdata.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laurenz/Documents/00AA UNI/2. Semester/Object Oriented and Functional Programming with Python/Pycharm/Simple habit tracker/.venv&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in project_test.py.executor": "Run",
+    "Python tests.Python tests in scratch.py.executor": "Run",
+    "Python tests.Python tests in test_project.py.executor": "Run",
+    "Python.SQL primitive testing.executor": "Run",
+    "Python.SQL_functionalities.executor": "Run",
+    "Python.adfadsf.executor": "Run",
+    "Python.adfdaf.executor": "Run",
+    "Python.analytics.executor": "Run",
+    "Python.class_habit.executor": "Run",
+    "Python.class_timespan.executor": "Run",
+    "Python.io_functions.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.project_test.executor": "Run",
+    "Python.scratch.executor": "Run",
+    "Python.scratch_2.executor": "Run",
+    "Python.setup.executor": "Run",
+    "Python.test project.executor": "Run",
+    "Python.testdata.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Laurenz/Documents/00AA UNI/2. Semester/Object Oriented and Functional Programming with Python/Pycharm/Simple habit tracker/.venv",
+    "settings.editor.selected.configurable": "preferences.keymap"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker\.venv" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker\Habit Tracker\tests" />
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker\Habit Tracker\data" />
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker\Habit Tracker" />
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker" />
+      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\habit_tracker" />
+      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker" />
+      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\Habit Tracker" />
+      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\Habit Tracker\src" />
+      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\Habit Tracker\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.io_functions">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="io_functions" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Habit tracker" />
       <option name="ENV_FILES" value="" />
@@ -163,86 +144,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Autodetect">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
     <list>

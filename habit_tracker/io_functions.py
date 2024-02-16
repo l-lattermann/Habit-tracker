@@ -1,11 +1,12 @@
-import class_habit as h
-import analytics
-import SQL_functionalities
 import numpy as np
-from datetime import datetime
+import datetime
 import questionary
 import os
 import traceback
+
+from habit_tracker import (class_habit as h,
+                           analytics,
+                           SQL_functionalities)
 
 
 header = "\n" \
@@ -21,7 +22,7 @@ def start_up() -> bool:
     """
     # Intro message for habit tracker
     intro_message = "***************************************************\n" \
-                    "*            Welcome to Habit Tracker!            *\n" \
+                    "*            Welcome to Habit tracker!            *\n" \
                     "*            Life is your choice...               *\n"\
                     "*            Please select start mode!            *\n"\
                     "***************************************************"

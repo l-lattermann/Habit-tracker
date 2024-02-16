@@ -1,9 +1,12 @@
 import random
-import SQL_functionalities
 import numpy as np
 import pandas as pd
-import analytics
-import class_habit
+
+from habit_tracker import (SQL_functionalities,
+                           analytics,
+                           class_habit)
+
+
 
 
 smoking = class_habit.Habit("smoking")
