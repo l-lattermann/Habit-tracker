@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6088d6db-3f74-4c35-9a41-8a394200b8ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Habit tracker.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="6088d6db-3f74-4c35-9a41-8a394200b8ec" name="Changes" comment="Final structure. Added .toml file. Everything works now.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habit_tracker/SQL_functionalities.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/SQL_functionalities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habit_tracker/io_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/io_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habit_tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/__main__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/habit_tracker/tests/project_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/tests/project_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +28,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.__main__.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests in project_test.py.executor": "Run",
+    "Python.__main__.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Laurenz/Desktop/Habit-tracker/habit_tracker"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -63,6 +55,35 @@
       <option name="presentableId" value="Default" />
       <updated>1708963940296</updated>
     </task>
+    <task id="LOCAL-00001" summary="Final structure. Added .toml file. Everything works now.">
+      <option name="closed" value="true" />
+      <created>1708971013948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708971013948</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Final structure. Added .toml file. Everything works now.">
+      <option name="closed" value="true" />
+      <created>1708971024161</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708971024161</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Final structure. Added .toml file. Everything works now.">
+      <option name="closed" value="true" />
+      <created>1708971311002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708971311002</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final structure. Added .toml file. Everything works now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final structure. Added .toml file. Everything works now." />
   </component>
 </project>

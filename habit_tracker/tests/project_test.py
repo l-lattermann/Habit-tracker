@@ -3,6 +3,8 @@ import coverage
 import numpy as np
 import pandas as pd
 import pathlib
+import webbrowser
+import os
 
 from habit_tracker import (SQL_functionalities,
                            class_habit as h,
@@ -11,7 +13,6 @@ from habit_tracker import (SQL_functionalities,
 
 cov = coverage.Coverage()
 cov.start()
-
 
 
 class TestHabit:
@@ -365,3 +366,26 @@ pytest.main()
 cov.stop()
 cov.save()
 cov.html_report(directory='coverage_reports')
+
+
+html_file_path = os.path.realpath("coverage_reports/index.html")
+css_file_path = os.path.realpath("coverage_reports/style.css")
+
+# Read HTML file content
+with open(html_file_path, 'r') as html_file:
+    html_content = html_file.read()
+
+# Read CSS file content
+with open(css_file_path, 'r') as css_file:
+    css_content = css_file.read()
+
+# Embed CSS content into the HTML file
+html_content_with_css = f'<html><head><style>{css_content}</style></head><body>{html_content}</body></html>'
+
+# Write the combined content to a temporary HTML file
+temp_html_file = 'coverage_reports/coverage_with_css.html'
+with open(temp_html_file, 'w') as temp_file:
+    temp_file.write(html_content_with_css)
+
+# Open the temporary HTML file in the default web browser
+webbrowser.open("File://" + os.path.realpath("coverage_reports/coverage_with_css.html"))
