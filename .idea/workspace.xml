@@ -4,153 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d67af1d5-a264-4a62-9b5e-a2364bfd94a3" name="Changes" comment="Expanded project_test.py, 86% coverage now. Couldn't get testing exeptions to work.">
-      <change afterPath="$PROJECT_DIR$/habit_tracker/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Habit tracker.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Habit tracker.iml" afterDir="false" />
+    <list default="true" id="6088d6db-3f74-4c35-9a41-8a394200b8ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Habit tracker.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/SQL_functionalities.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/SQL_functionalities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/analytics.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/analytics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/class_TimeFunc.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/class_TimeFunc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/class_habit.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/class_habit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/data/habits.db" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/data/habits.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/data/test_data.db" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/data/test_data.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/io_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/io_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/project_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/tests/project_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Habit Tracker/testdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/tests/testdata.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habit_tracker/SQL_functionalities.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/SQL_functionalities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habit_tracker/io_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/io_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/habit_tracker/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/__main__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="l-lattermann &lt;laurenz.lattermann@gmail.com&gt;" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
 }</component>
-  <component name="ProjectId" id="2b7VpDysfAqBG7Jup38k2SSiz7a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2cuaVIPltuETzrZi31BHiFzxH2W" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in project_test.py.executor": "Run",
-    "Python tests.Python tests in scratch.py.executor": "Run",
-    "Python tests.Python tests in test_project.py.executor": "Run",
-    "Python.SQL primitive testing.executor": "Run",
-    "Python.SQL_functionalities.executor": "Run",
-    "Python.adfadsf.executor": "Run",
-    "Python.adfdaf.executor": "Run",
-    "Python.analytics.executor": "Run",
-    "Python.class_habit.executor": "Run",
-    "Python.class_timespan.executor": "Run",
-    "Python.io_functions.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.project_test.executor": "Run",
-    "Python.scratch.executor": "Run",
-    "Python.scratch_2.executor": "Run",
-    "Python.setup.executor": "Run",
-    "Python.test project.executor": "Run",
-    "Python.testdata.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Laurenz/Documents/00AA UNI/2. Semester/Object Oriented and Functional Programming with Python/Pycharm/Simple habit tracker/.venv",
-    "settings.editor.selected.configurable": "preferences.keymap"
-  },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PLAIN_TEXT"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.__main__.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker\.venv" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\habit_tracker" />
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker" />
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\Habit Tracker" />
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\Habit Tracker\src" />
-      <recent name="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Habit tracker\Habit Tracker\tests" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="io_functions" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker\Habit Tracker\io_functions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="Habit tracker" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Laurenz\Documents\00AA UNI\2. Semester\Object Oriented and Functional Programming with Python\Pycharm\Simple habit tracker\Habit Tracker\main.py" />
-      <option name="PARAMETERS" value="--help" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.io_functions" />
-      <item itemvalue="Python.main" />
-    </list>
-  </component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -161,43 +57,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d67af1d5-a264-4a62-9b5e-a2364bfd94a3" name="Changes" comment="" />
-      <created>1705566284370</created>
+      <changelist id="6088d6db-3f74-4c35-9a41-8a394200b8ec" name="Changes" comment="" />
+      <created>1708963940296</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1705566284370</updated>
+      <updated>1708963940296</updated>
     </task>
-    <task id="LOCAL-00001" summary="19.01.24 alles eig ganz gut. IO und main fehlt">
-      <option name="closed" value="true" />
-      <created>1707291797015</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1707291797015</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Expanded project_test.py, 70% done">
-      <option name="closed" value="true" />
-      <created>1707303127734</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1707303127734</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Expanded project_test.py, 86% coverage now. Couldn't get testing exeptions to work.">
-      <option name="closed" value="true" />
-      <created>1707639139749</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1707639139750</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="19.01.24 alles eig ganz gut. IO und main fehlt" />
-    <MESSAGE value="Expanded project_test.py, 70% done" />
-    <MESSAGE value="Expanded project_test.py, 86% coverage now. Couldn't get testing exeptions to work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Expanded project_test.py, 86% coverage now. Couldn't get testing exeptions to work." />
   </component>
 </project>

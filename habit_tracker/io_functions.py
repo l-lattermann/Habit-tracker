@@ -22,7 +22,7 @@ def start_up() -> bool:
     """
     # Intro message for habit tracker
     intro_message = "***************************************************\n" \
-                    "*            Welcome to Habit tracker!            *\n" \
+                    "*            Welcome to Habit-tracker-project!            *\n" \
                     "*            Life is your choice...               *\n"\
                     "*            Please select start mode!            *\n"\
                     "***************************************************"
@@ -39,11 +39,11 @@ def start_up() -> bool:
         ]).ask()
 
     if start == "Normal - load save data and begin":
-        restore_all_from_database("data/habits.db")      # Load save data for mode normal
+        restore_all_from_database("habit_tracker/data/habits.db")      # Load save data for mode normal
         return False
 
     elif start == "Test mode - load test data and explore the app":
-        restore_all_from_database("data/test_data.db")      # Load test data for mode test
+        restore_all_from_database("habit_tracker/data/test_data.db")      # Load test data for mode test
         return True
 
 
@@ -243,7 +243,7 @@ def import_habits_from_database():
     :return:
     """
     print("You can only load .db files. The files must be located in the same directory as\n"
-          "the habit tracker main.py\n\n")
+          "the habit tracker __main__.py\n\n")
     while True:
         print("Please enter the filename as {'filename'.db}")
 

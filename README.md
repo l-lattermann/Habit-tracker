@@ -12,7 +12,7 @@ broken or checked.
 # Installation
 Make sure to install [Python 3.7](https://www.python.org/downloads/) or later.
 
-Install requirements.txt to get all the python modules needed for running this application.
+To install the project type:
 ````shell
 pip install -r requirements.txt
 ````
@@ -20,7 +20,7 @@ pip install -r requirements.txt
 # Usage
 To start the program just run the main.py and the start menu will lead you through the application.
 ```shell
-python main.py
+python __main__.py
 ```
 ### 1. Select start mode
 * Load from save data
