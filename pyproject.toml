@@ -21,7 +21,7 @@ authors = [
   {name = "Laurenz Lattermann"}
 ]
 
-description = "Lovely Spam! Wonderful Spam!"
+description = "Track your habits with this habit tracker!"
 readme = "README.md"
 
 [tool.setuptools.packages.find]
