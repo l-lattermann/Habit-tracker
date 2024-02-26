@@ -24,11 +24,8 @@ authors = [
 description = "Lovely Spam! Wonderful Spam!"
 readme = "README.md"
 
-[tool.setuptools.packages.find]
-where = ["habit_tracker"]
-
-[tool.setuptools.package-data]
-habit_data = ["*.db"]
+[project.entry-points."habit_tracker.test"]
+tomatoes = "habit_tracker.tests:TestHabit"
 
 [project.urls]
 Repository = "https://github.com/l-lattermann/Habit-tracker"

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6088d6db-3f74-4c35-9a41-8a394200b8ec" name="Changes" comment="Final structure. Added .toml file. Everything works now.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/habit_tracker/tests/project_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/habit_tracker/tests/project_test.py" afterDir="false" />
-    </list>
+    <list default="true" id="6088d6db-3f74-4c35-9a41-8a394200b8ec" name="Changes" comment="Added open coverage report in browser functionality." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,17 +25,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in project_test.py.executor": "Run",
-    "Python.__main__.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Laurenz/Desktop/Habit-tracker/habit_tracker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in project_test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.__main__.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Laurenz/Desktop/Habit-tracker/habit_tracker&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,11 +76,20 @@
       <option name="project" value="LOCAL" />
       <updated>1708971311002</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added open coverage report in browser functionality.">
+      <option name="closed" value="true" />
+      <created>1708986239634</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708986239634</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Final structure. Added .toml file. Everything works now." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final structure. Added .toml file. Everything works now." />
+    <MESSAGE value="Added open coverage report in browser functionality." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added open coverage report in browser functionality." />
   </component>
 </project>
