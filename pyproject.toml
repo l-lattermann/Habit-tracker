@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "wheel >= 0.38",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Habit_tracker"
+version = "1.0.0"
+dependencies = [
+      "questionary~=2.0.1",
+      "numpy~=1.26.3",
+      "pandas~=2.1.4",
+      "setuptools~=69.0.0",
+      "pytest~=7.4.4",
+      "coverage~=7.4.1",
+]
+requires-python = ">=3.7"
+authors = [
+  {name = "Laurenz Lattermann"}
+]
+
+description = "Lovely Spam! Wonderful Spam!"
+readme = "README.md"
+
+[tool.setuptools.packages.find]
+where = ["habit_tracker"]
+
+[tool.setuptools.package-data]
+habit_data = ["*.db"]
+
+[project.urls]
+Repository = "https://github.com/l-lattermann/Habit-tracker"
+
