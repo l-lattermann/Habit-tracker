@@ -24,12 +24,6 @@ authors = [
 description = "Track your habits with this habit tracker!"
 readme = "README.md"
 
-[tool.setuptools.packages.find]
-where = ["habit_tracker"]
-
-[tool.setuptools.package-data]
-habit_data = ["*.db"]
-
 [project.urls]
 Repository = "https://github.com/l-lattermann/Habit-tracker"
 
