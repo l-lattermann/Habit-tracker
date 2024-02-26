@@ -11,16 +11,15 @@ broken or checked.
 
 # Installation
 Make sure to install [Python 3.7](https://www.python.org/downloads/) or later.
-
-To install the project type:
-````shell
-pip install -r requirements.txt
+To install the project run from the root directory:
+````cmd
+pip install .
 ````
 
 # Usage
-To start the program just run the main.py and the start menu will lead you through the application.
-```shell
-python __main__.py
+To start the program just run habit_tracker and the start menu will lead you through the application.
+```cmd
+py haibit_tracker
 ```
 ### 1. Select start mode
 * Load from save data
@@ -51,6 +50,6 @@ There is a Pytest test suit included in this project.
 
 Run:
 ```shell
-python project_test.py
+project_test.py
 ```
 to start the test.
