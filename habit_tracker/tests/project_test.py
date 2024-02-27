@@ -363,11 +363,14 @@ class TestSQLFunctionalities:
 
 pytest.main()
 
+# Stop coverage
 cov.stop()
 cov.save()
+
+# Save location for coverage report
 cov.html_report(directory='coverage_reports')
 
-
+# Get the path of CSS and HTML file
 html_file_path = os.path.realpath("coverage_reports/index.html")
 css_file_path = os.path.realpath("coverage_reports/style.css")
 
