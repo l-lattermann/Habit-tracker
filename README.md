@@ -11,7 +11,7 @@ broken or checked.
 
 # Installation
 Make sure to install [Python 3.7](https://www.python.org/downloads/) or later.
-To install the project run from the root directory:
+To install the project from the project root directory run:
 ````cmd
 pip install .
 ````
@@ -28,7 +28,6 @@ py haibit_tracker
 ### 2 Main menu
 * Create new habit
 * Check habits
-* Load habits
 * Import habits
 * Show current habits
 * Get habit statistics
@@ -46,7 +45,7 @@ py haibit_tracker
 
 
 # Testing
-There is a Pytest test suit included in this project. 
+There is a Pytest test suit included in this project. It will open a coverage report in your browser automatically
 
 Run:
 ```shell
