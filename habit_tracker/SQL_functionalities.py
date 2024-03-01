@@ -8,9 +8,9 @@ from habit_tracker import class_habit as h
 # Create the database class
 class Database:
 
-    def __init__(self, file_name: str = "Habits.db"):
+    def __init__(self, file_name: str = "habits.db"):
         try:
-            self.con = sqlite3.connect(file_name)       # Create a sql connection to 'file_name.db'
+            self.con = sqlite3.connect("habit_tracker/data/"+file_name)      # Create a sql connection to 'file_name.db'
             self.cur = self.con.cursor()        # Create a cursor for the connection above
         except sqlite3.OperationalError:
             input("Database connection failed")

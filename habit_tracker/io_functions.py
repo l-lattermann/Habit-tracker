@@ -43,11 +43,11 @@ def start_up() -> bool:
         ]).ask()
 
     if start == "Normal - load save data and begin":
-        restore_all_from_database("habit_tracker/data/habits.db")      # Load save data for mode normal
+        restore_all_from_database("habits.db")      # Load save data for mode normal
         return False
 
     elif start == "Test mode - load test data and explore the app":
-        restore_all_from_database("habit_tracker/data/test_data.db")      # Load test data for mode test
+        restore_all_from_database("test_data.db")      # Load test data for mode test
         return True
 
 
@@ -172,7 +172,7 @@ def create_new_habit(save_file: str):
                 date = input()
                 form = "%Y-%m-%d"  # String format for comparison
                 try:
-                    datetime.strptime(date, form)   # Check if string can be converted into datetime
+                    datetime.datetime.strptime(date, form)   # Check if string can be converted into datetime
                     start_date = np.datetime64(date, "D")   # If yes, set it as start date
                     break
                 except ValueError:
