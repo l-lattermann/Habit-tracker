@@ -86,7 +86,7 @@ python3 haibit_tracker
 # Testing
 There is a Pytest test suit included in this project. It will open a coverage report in your browser automatically
 
-Run:
+In the project root directory run:
 ```shell
 pytest
 ```
