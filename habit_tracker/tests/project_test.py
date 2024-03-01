@@ -357,7 +357,7 @@ class TestSQLFunctionalities:
         del self.smoking
         del self.learning
         self.database.con.close()
-        path = pathlib.Path("pytest.db")
+        path = pathlib.Path("habit_tracker/data/pytest.db")
         path.unlink()
 
 
