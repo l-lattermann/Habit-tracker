@@ -16,6 +16,30 @@ Therefor navigate to directory you want to clone the project at and enter:
 ````cmd
 git clone https://github.com/l-lattermann/Habit-tracker.git
 ````
+### Virtual environment venv
+It is recommended to install into a virtual environment to avoid package conflicts in your Python installation.
+### Create a venv
+In the Habit-tracker-project folder run:
+#### Windows:
+````cmd
+.venv\Scripts\activate
+````
+#### MacOS:
+````cmd
+source .venv/bin/activate
+````
+### Activate venv
+In the Habit-tracker-project folder run:
+#### Windows:
+````cmd
+py -m venv .venv
+````
+#### MacOS:
+````cmd
+python3 -m venv .venv
+````
+
+### Install the project into the venv
 To install the project from the project root directory run:
 #### Windows:
 ````cmd
@@ -29,11 +53,11 @@ python3 -m pip install .
 # Usage
 To start the program just run habit_tracker and the start menu will lead you through the application.
 
-### Windows
+#### Windows
 ```cmd
 py haibit_tracker
 ```
-### MacOS
+#### MacOS
 ```cmd
 python3 haibit_tracker
 ```
