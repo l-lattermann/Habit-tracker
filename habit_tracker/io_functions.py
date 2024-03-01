@@ -1,6 +1,7 @@
 import numpy as np
 import datetime
 import questionary
+import platform
 import os
 import traceback
 
@@ -27,9 +28,12 @@ def start_up() -> bool:
                     "*            Please select start mode!            *\n"\
                     "***************************************************"
 
-    # Clear screen an print header
-    os.system("cls")
-    print(intro_message)
+    # Clear screen for header
+    if platform.system() == 'Darwin':  # macOS
+        os.system("clear")
+    elif platform.system() == 'Windows':  # Windows
+        os.system("cls")
+    print(header)
 
     # Select start mode
     start = questionary.select(
@@ -279,7 +283,11 @@ def check_habits(save_file: str):
     :return:
     """
     while True:     # Breaks either by input or when there are no habits to check
-        os.system("cls")    # Clear screen and print header
+        # Clear screen for header
+        if platform.system() == 'Darwin':  # macOS
+            os.system("clear")
+        elif platform.system() == 'Windows':  # Windows
+            os.system("cls")
         print(header)
 
         # Check if there are habits to check today
@@ -443,8 +451,13 @@ def display_help():
     Displays a user tutorial for the habit tracker.
     :return:
     """
-    os.system("cls")
+    # Clear screen for header
+    if platform.system() == 'Darwin':  # macOS
+        os.system("clear")
+    elif platform.system() == 'Windows':  # Windows
+        os.system("cls")
     print(header)
+
     print("\n"
           "                           -----------------------------                          \n"
           "                           How to use the habit tracker:                          \n"

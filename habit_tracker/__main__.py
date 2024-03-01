@@ -1,5 +1,6 @@
 import io_functions as io
 import questionary
+import platform
 import os
 
 def main():
@@ -24,7 +25,11 @@ def main():
     # The selected choice is then assigned to the variable
     # if statements then checks the variable content
     while True:
-        os.system("cls")
+        # Clear screen for header
+        if platform.system() == 'Darwin':  # macOS
+            os.system("clear")
+        elif platform.system() == 'Windows':  # Windows
+            os.system("cls")
         print(header)
         menu = questionary.select(
             "What do you want to do?", choices=[
@@ -49,8 +54,13 @@ def main():
 
         if menu == "Delete habits":
             while True:
-                os.system('cls')
+                # Clear screen for header
+                if platform.system() == 'Darwin':  # macOS
+                    os.system("clear")
+                elif platform.system() == 'Windows':  # Windows
+                    os.system("cls")
                 print(header)
+
                 del_menu = questionary.select(
                     "Habit statistics", choices=[
                         "Delete one habit",
