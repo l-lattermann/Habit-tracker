@@ -22,21 +22,23 @@ It is recommended to install into a virtual environment to avoid package conflic
 In the Habit-tracker-project folder run:
 #### Windows:
 ````cmd
-.venv\Scripts\activate
-````
-#### MacOS:
-````cmd
-source .venv/bin/activate
-````
-### Activate venv
-In the Habit-tracker-project folder run:
-#### Windows:
-````cmd
 py -m venv .venv
 ````
 #### MacOS:
 ````cmd
 python3 -m venv .venv
+````
+     
+
+### Activate the venv
+In the Habit-tracker-project folder run:
+#### Windows:
+````cmd
+.venv\Scripts\activate
+````
+#### MacOS:
+````cmd
+source .venv/bin/activate
 ````
 
 ### Install the project into the venv
