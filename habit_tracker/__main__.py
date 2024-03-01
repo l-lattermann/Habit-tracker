@@ -82,8 +82,13 @@ def main():
 
         if menu == "Get habit statistics":
             while True:
-                os.system('cls')
+                # Clear screen for header
+                if platform.system() == 'Darwin':  # macOS
+                    os.system("clear")
+                elif platform.system() == 'Windows':  # Windows
+                    os.system("cls")
                 print(header)
+
                 stat_menu = questionary.select(
                     "Habit statistics", choices=[
                         "Longest streak",

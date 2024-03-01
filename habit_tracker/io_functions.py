@@ -379,8 +379,12 @@ def went_poorly():
 
 def show_time_data():
     while True:     # Loop breaks by user input
-        os.system("cls")   # Clear screen
-        print(header)      # Print header
+        # Clear screen for header
+        if platform.system() == 'Darwin':  # macOS
+            os.system("clear")
+        elif platform.system() == 'Windows':  # Windows
+            os.system("cls")
+        print(header)
 
         # Create a list of habits, check if empty
         can_show = analytics.list_all_habits()
