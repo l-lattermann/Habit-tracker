@@ -11,15 +11,31 @@ broken or checked.
 
 # Installation
 Make sure to install [Python 3.7](https://www.python.org/downloads/) or later.
-To install the project from the project root directory run:
+Clone the directory from GitHub using the Git Bash.
+Therefor navigate to directory you want to clone the project at and enter:
 ````cmd
-pip install .
+git clone https://github.com/l-lattermann/Habit-tracker.git
+````
+To install the project from the project root directory run:
+#### Windows:
+````cmd
+py -m pip install .
 ````
 
+#### MacOS:
+````cmd
+python3 -m pip install .
+````
 # Usage
 To start the program just run habit_tracker and the start menu will lead you through the application.
+
+### Windows
 ```cmd
 py haibit_tracker
+```
+### MacOS
+```cmd
+python3 haibit_tracker
 ```
 ### 1. Select start mode
 * Load from save data
@@ -28,7 +44,6 @@ py haibit_tracker
 ### 2 Main menu
 * Create new habit
 * Check habits
-* Import habits
 * Show current habits
 * Get habit statistics
   * Longest streak
@@ -49,6 +64,6 @@ There is a Pytest test suit included in this project. It will open a coverage re
 
 Run:
 ```shell
-project_test.py
+pytest
 ```
 to start the test.
