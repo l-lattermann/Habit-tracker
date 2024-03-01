@@ -9,9 +9,9 @@ def main():
 
     # Change the save file in test mode to test.db so test data does not overwrite the current save data
     if test_mode:
-        save_file = "data/test_save.db"
+        save_file = "test_save.db"
     else:
-        save_file = "data/habits.db"
+        save_file = "habits.db"
 
 
     # Application header
